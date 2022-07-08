@@ -1,0 +1,29 @@
+{
+  "fmt": {
+    "files": {
+      "include": ["app/", "_config.ts", "README.md"]
+    },
+    "options": {
+      "indentWidth": 2,
+      "lineWidth": 80,
+      "proseWrap": "always",
+      "singleQuote": true,
+      "useTabs": false
+    }
+  },
+  "lint": {
+    "files": {
+      "include": ["app/"]
+    },
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo", "no-unused-vars"]
+    }
+  },
+  "importMap": "import_map.json",
+  "tasks": {
+    "lume": "deno eval \"import 'lume/task.ts'\" --",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  }
+}
