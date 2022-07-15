@@ -1,7 +1,7 @@
 {
   "fmt": {
     "files": {
-      "include": ["src/", "_plugins", "_config.ts", "README.md"]
+      "include": ["src/", "plugins", "_config.ts", "README.md"]
     },
     "options": {
       "indentWidth": 2,
@@ -13,7 +13,7 @@
   },
   "lint": {
     "files": {
-      "include": ["src/", "_plugins", "_config.ts"]
+      "include": ["src/", "plugins", "_config.ts"]
     },
     "rules": {
       "tags": ["recommended"],
