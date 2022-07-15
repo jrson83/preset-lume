@@ -2,14 +2,12 @@
   "deno.enable": true,
   "deno.lint": true,
   "deno.unstable": true,
+  "deno.config": "./deno.json",
   "[typescript]": {
     "editor.defaultFormatter": "denoland.vscode-deno",
   },
-  "deno.import_intellisense_autodiscovery": true,
-  "deno.import_intellisense_origins": {
-    "https://deno.land/":true
-  },
   "deno.suggest.imports.hosts": {
-    "https://deno.land": false
+    "https://deno.land": true,
+    "https://esm.sh": true
   }
 }
