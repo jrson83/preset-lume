@@ -14,7 +14,9 @@ export const defaults: Options = {
 
 /** A plugin to <description> */
 export default function (userOptions?: Partial<Options>) {
+  const options = merge(defaults, userOptions);
+  
   return (site: Site) => {
-    const options = merge(defaults, userOptions);
+    console.log("Lume")
   };
 }
