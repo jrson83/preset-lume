@@ -1,6 +1,7 @@
 {
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.10.1/",
+    "husky": "https://esm.sh/husky@8.0.1",
     "plugins/": "./plugins/"
   }
 }
