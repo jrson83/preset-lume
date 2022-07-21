@@ -25,6 +25,8 @@
   "tasks": {
     "lume": "deno eval \"import 'lume/task.ts'\" --",
     "clean": "rm -rf ./_site/",
+    "format:check": "deno fmt --check",
+    "format": "deno fmt",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   }
